@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Search" />
+        android:layout_below="@+id/imageView"/>
 
     <ListView
         android:id="@+id/listFilm"
@@ -42,9 +42,10 @@
         android:id="@+id/Search"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_alignLeft="@+id/webView1"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/imageView"
         android:layout_alignRight="@+id/webView1"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
         android:background="@color/Yellow"
         android:ems="10"
         android:inputType="textNoSuggestions"
@@ -52,5 +53,14 @@
 
         <requestFocus />
     </EditText>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_launcher"
+        />
 
 </RelativeLayout>
